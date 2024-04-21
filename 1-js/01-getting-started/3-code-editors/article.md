@@ -1,47 +1,47 @@
 # Code editors
 
-A code editor is the place where programmers spend most of their time.
+A code editor là nơi lập trình viên rành nhiều thời gian.
 
-There are two main types of code editors: IDEs and lightweight editors. Many people use one tool of each type.
+có 2 loại code editors chính: IDEs và lightweight editors. Rất nhiều người dùng 1 công cụ từ mỗi loại.
 
 ## IDE
 
-The term [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) (Integrated Development Environment) refers to a powerful editor with many features that usually operates on a "whole project." As the name suggests, it's not just an editor, but a full-scale "development environment."
+The term [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) (Integrated Development Environment) được coi là 1 cái editor rất mạnh với rất nhiều tính năng thường để chạy trên một "project đầy dủ." như đã đc đề xuất , nó không chỉ là một editor, nhưng là "development environment/môi trường dev" toàn diện
 
-An IDE loads the project (which can be many files), allows navigation between files, provides autocompletion based on the whole project (not just the open file), and integrates with a version management system (like [git](https://git-scm.com/)), a testing environment, and other "project-level" stuff.
+IDE loads/tải toàn bộ dự án (có thể chứa rất nhiều files), cho phép điều hướng giữa các files, cho phép tự động hoằn thành dựa trên toàn bộ dự án (không chỉ những file đã mở), và thích hợp với phiên bản quản lý hệ thống (like [git](https://git-scm.com/)), một nơi để thử nghệm, và còn những "project-level" nữa.
 
-If you haven't selected an IDE yet, consider the following options:
+nếu bạn chưa muốn lựa chọn IDE , hãy tham khảo các cái này:
 
 - [Visual Studio Code](https://code.visualstudio.com/) (cross-platform, free).
 - [WebStorm](https://www.jetbrains.com/webstorm/) (cross-platform, paid).
 
-For Windows, there's also "Visual Studio", not to be confused with "Visual Studio Code". "Visual Studio" is a paid and mighty Windows-only editor, well-suited for the .NET platform. It's also good at JavaScript. There's also a free version [Visual Studio Community](https://www.visualstudio.com/vs/community/).
+trên Window, còn có "Visual Studio", nhưng nó không phải là "Visual Studio Code". "Visual Studio" nó là một cái editor mạnh chỉ dành cho WIn, rất phù hợp cho nền tảng .NET . nó cũng tốt với JavaScript. và nó free [Visual Studio Community](https://www.visualstudio.com/vs/community/).
 
-Many IDEs are paid, but have a trial period. Their cost is usually negligible compared to a qualified developer's salary, so just choose the best one for you.
+Rất nhiều IDEs phải mất phí, những họ sẽ cho bạn miễn phí thử nhiệm 1 thời gian. Phí cảu những cái web đấy không đáng kể so với đồng lương của các dev tiêu chuẩn, nên hãy chọn 1 cái cho bạn.
 
 ## Lightweight editors
 
-"Lightweight editors" are not as powerful as IDEs, but they're fast, elegant and simple.
+"Lightweight editors/ editor nhẹ" không mạnh bằng IDEs, đổi lại thì nó nhanh, đơn giản/lịch sự và dễ hiểu.
 
-They are mainly used to open and edit a file instantly.
+được dùng chủ yếu để mở hoặc edit một files ngay tức thì.
 
-The main difference between a "lightweight editor" and an "IDE" is that an IDE works on a project-level, so it loads much more data on start, analyzes the project structure if needed and so on. A lightweight editor is much faster if we need only one file.
+điểm khác biệt chinhsn giữa "lightweight editor" và "IDE" là IDE làm việc trên project-level/ level dự án, nên phải load nhiều data hơn khi bắt đàu, phân tích cấu trúc dự án nếu cần và nhiều hơn thế. lightweight editor nhanh hơn nếu chỉ cần làm việc với file.
 
-In practice, lightweight editors may have a lot of plugins including directory-level syntax analyzers and autocompleters, so there's no strict border between a lightweight editor and an IDE.
+trông luyện tập, lightweight editors có thể có rất nhiều bổ sung trong đó bao gồm cú pháp phân tích level từ điển và autocompleters/ máy tự động hoàn thành, nên sẽ không có biên giới ngiêm ngặt nào giữa lightweight editor và IDE.
 
-There are many options, for instance:
+có rất nhiều lựa chọn, for instance:
 
 - [Sublime Text](https://www.sublimetext.com/) (cross-platform, shareware).
 - [Notepad++](https://notepad-plus-plus.org/) (Windows, free).
-- [Vim](https://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
+- [Vim](https://www.vim.org/) và [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
 
 ## Let's not argue
 
-The editors in the lists above are those that either I or my friends whom I consider good developers have been using for a long time and are happy with.
+những cái editors trên là những thứ tôi và bạn của tôi, những người tôi cho rằng là dev giỏi đang và đã dùng và cảm thấy hài lòng khi sử dụng nó.
 
-There are other great editors in our big world. Please choose the one you like the most.
+Còn rất nhiều editors khác ở thế giới bên ngoài kia. hyax chọn cái mà bạn thích nhất.
 
-The choice of an editor, like any other tool, is individual and depends on your projects, habits, and personal preferences.
+lựa chọn của một editor, như những công cụ khác, nó cá nhân và phụ thuộc vào dự án, thói quen của bạn, và sở thích cá nhân.
 
 The author's personal opinion:
 
