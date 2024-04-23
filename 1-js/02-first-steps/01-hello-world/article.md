@@ -1,15 +1,15 @@
 # Hello, world!
 
-This part of the tutorial is about core JavaScript, the language itself.
+Trong phần này sẽ chỉ học về JavaScript, về ngôn ngũ này.
 
-But we need a working environment to run our scripts and, since this book is online, the browser is a good choice. We'll keep the amount of browser-specific commands (like `alert`) to a minimum so that you don't spend time on them if you plan to concentrate on another environment (like Node.js). We'll focus on JavaScript in the browser in the [next part](/ui) of the tutorial.
+chúng ta cần một môi trường tốt để chạy script, bởi vì quyển sách này online, browser là 1 lựa chọn tốt.chúng tôi sẽ giữ những command browser cụ thể như (like `alert`) xuông mức tối thiểu để bạn không giành quá nhiều thời gian vào nó nêu bạn có dự định tập trung vào môi trường khác (like Node.js). We'll focus on JavaScript in the browser in the [next part](/ui) of the tutorial.
 
 So first, let's see how we attach a script to a webpage. For server-side environments (like Node.js), you can execute the script with a command like `"node my.js"`.
 
 
 ## The "script" tag
 
-JavaScript programs can be inserted almost anywhere into an HTML document using the `<script>` tag.
+JavaScript programs có thể chuyển thành tài liệu HTML ở hấu hết mọi nơi với việ dùng `<script>` tag.
 
 For instance:
 
@@ -38,21 +38,21 @@ For instance:
 You can run the example by clicking the "Play" button in the right-top corner of the box above.
 ```
 
-The `<script>` tag contains JavaScript code which is automatically executed when the browser processes the tag.
+The `<script>` tag chứa JavaScript code sẽ tự động tiến hành khi browser chạy cái tag.
 
 
 ## Modern markup
 
-The `<script>` tag has a few attributes that are rarely used nowadays but can still be found in old code:
+The `<script>` tag có nhiều thuộc tính mà bây giờ hiếm khi được sử dụng nhưng vẫn đc tìm thấy ở code cũ:
 
-The `type` attribute: <code>&lt;script <u>type</u>=...&gt;</code>
-: The old HTML standard, HTML4, required a script to have a `type`. Usually it was `type="text/javascript"`. It's not required anymore. Also, the modern HTML standard totally changed the meaning of this attribute. Now, it can be used for JavaScript modules. But that's an advanced topic, we'll talk about modules in another part of the tutorial.
+The `type` thuộc tính: <code>&lt;script <u>type</u>=...&gt;</code>
+: tiêu chuẩn HTML cũ, HTML4, yêu cầu script phải có `type`. thường thì là `type="text/javascript"`. bây giờ thì không cần nữa. Also, tiêu chuẩn HTML thời nay hoàn toàn thay đổi ý nghĩa của thuộc tính này. bây giờ nó có thể dung cho JavaScript modules. nhưng dố là chủ đề nâng cao, chúng ta sẽ nói về modules ở phần khác của tutorial.
 
-The `language` attribute: <code>&lt;script <u>language</u>=...&gt;</code>
-: This attribute was meant to show the language of the script. This attribute no longer makes sense because JavaScript is the default language. There is no need to use it.
+thuộc tính của `language`: <code>&lt;script <u>language</u>=...&gt;</code>
+: thuộc tính này dùng để chỉ ra ngôn ngữ của dong script. thuộc tính này không cồn ý nghĩa nừa vì JavaScript chính là ngôn ngữ default. không cần phải dùng nó.
 
 Comments before and after scripts.
-: In really ancient books and guides, you may find comments inside `<script>` tags, like this:
+: ở rất nhiều quyển sách và hướng dẫn cũ, you may find comments inside `<script>` tags, like this:
 
     ```html no-beautify
     <script type="text/javascript"><!--
@@ -60,28 +60,27 @@ Comments before and after scripts.
     //--></script>
     ```
 
-    This trick isn't used in modern JavaScript. These comments hide JavaScript code from old browsers that didn't know how to process the `<script>` tag. Since browsers released in the last 15 years don't have this issue, this kind of comment can help you identify really old code.
+    This trick không còn hoạt động ở JavaScript hiện đại. những lệnh này nhằm che giấu JavaScript code khỏi các browser cũ không biết cách chạy lệnh `<script>` tag. bời vì browser được phát hành trong 15 năm dổ lại đây không có lỗi này, dòng lệnh này có thể giúp bạn nhận biết được những code rất cũ
 
 
 ## External scripts
 
-If we have a lot of JavaScript code, we can put it into a separate file.
-
-Script files are attached to HTML with the `src` attribute:
+nếu ta có rất nhiều JavaScript code, ta có thể đặt nó vào những file riệng biệt
+Script files được gắn vào HTML với thuộc tính `src`:
 
 ```html
 <script src="/path/to/script.js"></script>
 ```
 
-Here, `/path/to/script.js` is an absolute path to the script from the site root. One can also provide a relative path from the current page. For instance, `src="script.js"`, just like `src="./script.js"`, would mean a file `"script.js"` in the current folder.
+ở, `/path/to/script.js` nó là đường tuyệt đối đến script từ trang web góc. họ cũng có thể cung cấp một đường dẫn tương đối từ trang hiện tại. For instance, `src="script.js"`, cũng giống `src="./script.js"`, nghĩa là 1 `"script.js"` đang ở trong cái folder này.
 
-We can give a full URL as well. For instance:
+ta cũng có thể đưa URL đầy đủ. For instance:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
 ```
 
-To attach several scripts, use multiple tags:
+để găn nhiều script scripts, dùng nhiều tags:
 
 ```html
 <script src="/js/script1.js"></script>
@@ -90,18 +89,19 @@ To attach several scripts, use multiple tags:
 ```
 
 ```smart
-As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files.
+như quy luật, chỉ những script đơn giản nhất được dặt vào HTML. nhưng cái phức tạp hơn nằm trong các tệp riêng biệt.
 
-The benefit of a separate file is that the browser will download it and store it in its [cache](https://en.wikipedia.org/wiki/Web_cache).
+lợi ích vủa các file riêng biệt là browser sẽ tự động tải về và dự trữ ở cache của nó [cache](https://en.wikipedia.org/wiki/Web_cache).
 
-Other pages that reference the same script will take it from the cache instead of downloading it, so the file is actually downloaded only once.
+các trang khác mà có mối quan hệ với the same script sẽ lấy script từ cache mà không cần phải download nó, nên cái file chỉ cần được download 1 lần.
 
-That reduces traffic and makes pages faster.
+giúp giảm tải lưu lượng dữ liệu và làm trang web nhanh hơn.
 ```
 
 ````warn header="If `src` is set, the script content is ignored."
 A single `<script>` tag can't have both the `src` attribute and code inside.
-
+một khi đã đạt 'SCR' thì dòng script sẽ bị bỏ qua
+một script không thể có cả thuộc tính SCR và mã ở bên trong
 This won't work:
 
 ```html
@@ -110,7 +110,7 @@ This won't work:
 </script>
 ```
 
-We must choose either an external `<script src="…">` or a regular `<script>` with code.
+chúng ta phải chọn giữa `<script src="…">` bên ngoài hoặc là `<script>` đươn giản với code.
 
 The example above can be split into two scripts to work:
 
@@ -122,11 +122,11 @@ The example above can be split into two scripts to work:
 ```
 ````
 
-## Summary
+## Tổng kết
 
-- We can use a `<script>` tag to add JavaScript code to a page.
-- The `type` and `language` attributes are not required.
-- A script in an external file can be inserted with `<script src="path/to/script.js"></script>`.
+- dùng lệnh `<script>` để thêm JavaScript code vào 1 trang.
+- thuộc tính `type` và `language`là không cần thiết/ yêu cầu.
+- Script ở trong một file bên ngoài có thể thêm vào dùng lệnh `<script src="path/to/script.js"></script>`.
 
 
 There is much more to learn about browser scripts and their interaction with the webpage. But let's keep in mind that this part of the tutorial is devoted to the JavaScript language, so we shouldn't distract ourselves with browser-specific implementations of it. We'll be using the browser as a way to run JavaScript, which is very convenient for online reading, but only one of many.
